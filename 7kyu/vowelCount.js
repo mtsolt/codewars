@@ -21,12 +21,29 @@ const vowelCount2 = (string2) => {
     return count
 }
 
+const vowelCount3 = (string) => {
+    let count = 0
+    const vowel = ['a', 'e', 'i', 'o', 'u']
+    string = string.toLowerCase()
+    for (let i=0; i<string.length; i++) {
+        for (let j=0; j<vowel.length; j++) {
+            if (string[i] === vowel[j]) {
+                count ++
+            }
+        }
+    }
+    return count
+}
+
+
 console.log(vowelCount('hello'))
 console.log(vowelCount('tRApezIus'))
 
 console.log(vowelCount2('hello'))
 console.log(vowelCount2('tRApezIus'))
 
+console.log(vowelCount3('hello'))
+console.log(vowelCount3('tRApezIus'))
 
 // GOOD EXAMPLES FROM GITHUB
 
