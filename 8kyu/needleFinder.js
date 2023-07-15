@@ -6,8 +6,8 @@
 
 // "found the needle at position " plus the index it found the needle, so:
 
-function findNeedle(array){
-  return array1.findIndex(word => word === "needle")
+function findNeedle(haystack){
+  return `found the needle at position ${haystack.findIndex(word => word === "needle")}`
 
 }
 
