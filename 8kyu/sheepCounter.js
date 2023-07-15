@@ -2,7 +2,6 @@
 
 
 function countSheeps(arrayOfSheep) {
-  console.log(arrayOfSheep)
   let counter = 0
   for (let i = 0; i <arrayOfSheep.length; i++) {
     arrayOfSheep[i] ? counter ++ : null
@@ -18,3 +17,9 @@ const array1 = [true,  true,  true,  false,
 
 
   console.log(countSheeps(array1))
+
+
+  // * Better solutions from codewars:
+  function countSheeps(arrayOfSheeps) {
+    return arrayOfSheeps.filter(Boolean).length;
+  }
