@@ -15,3 +15,8 @@ function findNeedle(haystack){
 const array1 = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
 
 console.log(findNeedle(array1))
+
+// * Simpler solution from codewsrs
+function findNeedle(haystack) {
+  return "found the needle at position " + haystack.indexOf("needle");
+}
