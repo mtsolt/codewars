@@ -7,11 +7,11 @@
 // "found the needle at position " plus the index it found the needle, so:
 
 function findNeedle(array){
-  console.log(array1)
+  return array1.findIndex(word => word === "needle")
 
 }
 
 
 const array1 = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
 
-findNeedle(array1)
+console.log(findNeedle(array1))
